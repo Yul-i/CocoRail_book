@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TableActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center|center_horizontal"
+        android:text="열차 시간표"
+        android:textColor="@color/material_on_background_disabled"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/station_list"
+            android:layout_width="188dp"
+            android:layout_height="match_parent"
+            android:background="@color/mint" />
+
+        <ListView
+            android:id="@+id/time_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green_ash" />
+    </LinearLayout>
+</LinearLayout>

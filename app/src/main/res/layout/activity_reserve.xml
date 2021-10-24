@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ReserveActivity">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center|center_horizontal"
+        android:text="승차권 내역"
+        android:textColor="@color/material_on_background_disabled"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:background="@color/green_ash"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reserveDay"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center|center_vertical"
+            android:text="2021년 10월 19일"
+            android:textColor="@color/mint"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green_ash"
+                android:baselineAligned="false"
+                android:clickable="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reserveDepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="용산"
+                    android:textColor="@color/black"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reserveDepartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="10 : 35"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green_ash"
+                android:baselineAligned="false"
+                android:clickable="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reserveArrive"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="군산"
+                    android:textColor="@color/black"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reserveArriveTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:gravity="center|center_horizontal"
+                    android:text="13 : 55"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reserveTrain"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center|center_horizontal"
+            android:text="[무궁화호 1557]"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D7DAD7"
+                android:gravity="center"
+                android:text="타는 곳"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D7DAD7"
+                android:gravity="center"
+                android:text="호차번호"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D7DAD7"
+                android:gravity="center"
+                android:text="좌석번호"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="5번"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/reserveSeat"
+                android:layout_width="154dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="12호차"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="일반실" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="4dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="순방향" />
+
+            <TextView
+                android:id="@+id/reserveId"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0000-00000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="69dp"
+                android:layout_weight="1"
+                android:backgroundTint="#676767"
+                android:text="예약 취소" />
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/mint"
+                android:text="열차 시간표" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/mint"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bb1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:text="승차권예매"
+            app:icon="@drawable/train_icon"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="130px" />
+
+        <Button
+            android:id="@+id/bb2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:text="승차권확인"
+            app:icon="@drawable/ticket_icon"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="130px" />
+
+        <Button
+            android:id="@+id/bb3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ff0000"
+            android:text="마이페이지"
+            app:icon="@drawable/mypage_icon"
+            app:iconGravity="top"
+            app:iconPadding="5dp"
+            app:iconSize="130px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "602141866335",
+    "firebase_url": "https://cocotrain-4dfc1-default-rtdb.firebaseio.com",
+    "project_id": "cocotrain-4dfc1",
+    "storage_bucket": "cocotrain-4dfc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602141866335:android:04b7a76d67d23729e8deea",
+        "android_client_info": {
+          "package_name": "com.pro3.coco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602141866335-huc93p36nnushlbpavv2sqnn57gb231r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYioB8fS6lzg3mIFuTavcqTBkU8uN6eF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602141866335-huc93p36nnushlbpavv2sqnn57gb231r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
