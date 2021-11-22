@@ -6,12 +6,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -28,13 +25,12 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
         getSupportActionBar().hide();
 
-        not_layout = findViewById(R.id.not_layout);
+        not_layout = findViewById(R.id.layout);
 
         myDBHelper = new MyDBHelper(this);
         SQLiteDatabase sqlDB = myDBHelper.getWritableDatabase();
         String sql = "select bookId, bookDepartDay, bookDepart, bookArrive from bookTBL";
         Cursor cursor = sqlDB.rawQuery(sql, null);
-
         //요소 추가
         //리스트뷰
         ListView list = findViewById(R.id.list);
@@ -45,16 +41,16 @@ public class ResultActivity extends AppCompatActivity {
 
         while (cursor.moveToNext()){
             not_layout.setVisibility(View.INVISIBLE);
-            resultList.add(cursor.getString(2)+" / 출발지 : "+cursor.getString(1)+" / 도착지 : "+cursor.getString(3));
+            resultList.add(cursor.getString(2)+
+                    " / 출발지 : "+cursor.getString(1)+
+                    " / 도착지 : "+cursor.getString(3));
             idList.add(cursor.getString(0));
         }
-
-
         cursor.close();
         sqlDB.close();
 
-        ArrayAdapter<String> resultAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, resultList);
-
+        ArrayAdapter<String> resultAdapter = new ArrayAdapter<String>(getApplicationContext(),
+                android.R.layout.simple_list_item_1, resultList);
 
         list.setAdapter(resultAdapter);
 

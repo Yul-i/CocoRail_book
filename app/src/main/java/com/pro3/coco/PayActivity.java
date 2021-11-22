@@ -66,11 +66,13 @@ public class PayActivity extends AppCompatActivity {
                     case KeyEvent.KEYCODE_ENTER:
                         int checkMileage = Integer.parseInt(usedMileage.getText().toString());
                         if (memberMileage<checkMileage){
-                            Toast.makeText(getApplicationContext(), "보유 마일리지가 부족합니다.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),
+                                    "보유 마일리지가 부족합니다.", Toast.LENGTH_SHORT).show();
                         }
                         else{
                             if(price<checkMileage){
-                                Toast.makeText(getApplicationContext(), "마일리지가 구매 금액보다 큽니다.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(),
+                                        "마일리지가 구매 금액보다 큽니다.", Toast.LENGTH_SHORT).show();
                             }else{
                                 totalPrice.setText(price-checkMileage+"원");
                             }
@@ -163,7 +165,9 @@ public class PayActivity extends AppCompatActivity {
         String bookPriceText = bookPrice.getText().toString();
         String totalPriceText = totalPrice.getText().toString();
         String bookPayText = pay;
-        String sql = "update bookTBL set bookPrice='"+bookPriceText+"', bookTotalPrice='"+bookPriceText+"', bookPay='"+bookPayText+"' where bookId = '"+bookId+"';";
+        String sql = "update bookTBL set bookPrice='"+bookPriceText+"', " +
+                "bookTotalPrice='"+bookPriceText+"', bookPay='"+bookPayText+"' " +
+                "where bookId = '"+bookId+"';";
         sqlDB.execSQL(sql);
         Log.d("sqlite3DML", "데이터 삽입 성공");
 

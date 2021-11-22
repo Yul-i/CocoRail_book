@@ -27,7 +27,6 @@ public class BookActivity extends AppCompatActivity {
 
         /*
             회원 정보 받아오기
-            여기서는 예시로 test1에 넣어두겠음
         */
 
         String mId = "test1";
@@ -73,7 +72,10 @@ public class BookActivity extends AppCompatActivity {
                 SimpleDateFormat date = new SimpleDateFormat("yyyyMMddhhmmss");
                 String nowDay = date.format(new Date());
 
-                String sql = "insert into bookTBL (bookId, mId, bookDepartDay, bookDepart, bookDepartTime, bookArrive, bookArriveTime, bookTrainNum, bookSeatNum)values ('"+nowDay+"','"+mId+"','"+departText+"','"+departDayText+"','"+departTimeText+"','"+arriveText+"','"+arriveTimeText+"','"+trainNumText+"','"+seatNumText+"');";
+                String sql = "insert into bookTBL (bookId, mId, bookDepartDay, bookDepart, bookDepartTime, bookArrive, " +
+                        "bookArriveTime, bookTrainNum, bookSeatNum)values " +
+                        "('"+nowDay+"','"+mId+"','"+departText+"','"+departDayText+"','"+departTimeText+"','"+arriveText+"'," +
+                        "'"+arriveTimeText+"','"+trainNumText+"','"+seatNumText+"');";
                 sqlDB.execSQL(sql);
                 Log.d("sqlite3DML", "데이터 삽입 성공");
 
